@@ -1,16 +1,23 @@
 body {
   min-height: 100vh;
   min-height: 100svh;
+
+  display: grid;
+
+  place-content: safe center;
 }
 
 main {
   height: 100%;
   height: 100svh;
   display: grid;
-  place-content: center;
+  /* place-content: center; */
   /* grid-template-columns: repeat(4, minmax(0, 1fr)); */
   grid-template-columns: repeat(4, minmax(0, 1fr));
+
   grid-template-rows: repeat(5, minmax(0, auto));
+  /* grid-template-rows: repeat(auto-fill, 1fr); */
+  /* grid-template-rows: repeat(5, minmax(100px, 1fr)); */
 }
 
 .social-dashboard-container {
@@ -20,7 +27,7 @@ main {
 
 .theme-container {
   grid-row: 1;
-  grid-column: 4 / 5;
+  grid-column: 4 / -1;
 }
 
 .overview {
