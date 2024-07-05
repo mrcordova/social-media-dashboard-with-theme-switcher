@@ -134,6 +134,7 @@ label {
   background-color: var(--Light-Grayish-Blue-Card-BG);
   padding-inline: 4rem;
   border-radius: 0.4rem;
+  gap: 1.25rem;
 }
 .total-card > div:first-child {
   display: flex;
@@ -154,7 +155,7 @@ label {
   color: var(--Very-Dark-Blue-Text);
   font-size: 3.5rem;
   letter-spacing: -0.12rem;
-  line-height: 1.05;
+  line-height: 1.08;
 }
 .followers-number > p {
   color: var(--Dark-Grayish-Blue-Text);
