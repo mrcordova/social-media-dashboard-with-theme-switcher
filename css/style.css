@@ -1,3 +1,12 @@
+:root {
+  --light-theme-toggle: hsl(232, 22%, 74%);
+
+  --dark-theme-toggle: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%) 0%,
+    hsl(146, 68%, 55%) 100%
+  );
+}
 body {
   min-height: 100vh;
   min-height: 100svh;
@@ -50,7 +59,7 @@ label {
   display: inline-block;
   width: 3rem;
   height: 1.5rem;
-  background-color: gray;
+  background-color: var(--light-theme-toggle);
   border-radius: 2rem;
 }
 
@@ -63,13 +72,16 @@ label {
   /* top: 0.2rem; */
   left: 1.7rem;
   top: 0.2rem;
-  background-color: white;
+  background-color: hsl(240, 24%, 96%);
   transition: 0.4s;
   border-radius: 50%;
 }
 
 #toggle:checked + .slider {
-  background-color: blue;
+  background: var(--dark-theme-toggle);
+}
+#toggle + .slider:hover {
+  background: var(--dark-theme-toggle);
 }
 
 #toggle:checked + .slider::before {
