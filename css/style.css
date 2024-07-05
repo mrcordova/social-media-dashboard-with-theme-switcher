@@ -27,6 +27,8 @@
     hsl(210, 78%, 56%) 0%,
     hsl(146, 68%, 55%) 100%
   );
+
+  --Lime-Green: hsl(163, 72%, 41%);
 }
 body {
   min-height: 100vh;
@@ -156,6 +158,12 @@ label {
 .total-card > div:last-child {
   display: flex;
   align-items: center;
+  gap: 0.2rem;
+}
+
+.followers-percentage > p {
+  color: var(--Lime-Green);
+  font-size: 0.8rem;
 }
 .cards {
   grid-row: 1;
