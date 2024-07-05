@@ -18,6 +18,10 @@
   --light-theme-toggle: hsl(232, 22%, 74%);
   --Dark-Grayish-Blue-Text: hsl(228, 12%, 44%);
   --Very-Pale-Blue-bg-pattern: hsl(225, 100%, 98%);
+  --Light-Grayish-Blue-Card-BG: hsl(227, 47%, 96%);
+
+  --Dark-Grayish-Blue-Text: hsl(228, 12%, 44%);
+  --Very-Dark-Blue-Text: hsl(230, 17%, 14%);
   --dark-theme-toggle: linear-gradient(
     to right,
     hsl(210, 78%, 56%) 0%,
@@ -60,6 +64,8 @@ main {
   grid-column: 1 / -1;
   background-color: var(--Very-Pale-Blue-bg-pattern);
   height: fit-content;
+  /* width: 50rem; */
+  justify-content: space-between;
   align-items: center;
   /* width: 100%; */
   padding-block: 3rem 5rem;
@@ -120,8 +126,37 @@ label {
 
 /* Toggle Switch end  */
 .total-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--Light-Grayish-Blue-Card-BG);
+  padding-inline: 4rem;
+  border-radius: 0.4rem;
 }
-
+.total-card > div:first-child {
+  display: flex;
+  align-items: center;
+}
+.total-card > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.followers-number > h2 {
+  color: var(--Very-Dark-Blue-Text);
+  font-size: 3.5rem;
+  letter-spacing: -0.12rem;
+  line-height: 1.05;
+}
+.followers-number > p {
+  color: var(--Dark-Grayish-Blue-Text);
+  font-size: 0.9rem;
+  letter-spacing: 0.21rem;
+}
+.total-card > div:last-child {
+  display: flex;
+  align-items: center;
+}
 .cards {
   grid-row: 1;
   grid-column: 1 / -1;
@@ -129,12 +164,14 @@ label {
   grid-template-columns: repeat(4, minmax(min-content, max-content));
   grid-auto-rows: max-content;
   padding-block-start: 8rem;
+  gap: 1rem;
 }
 .overview {
   grid-row: 3;
   grid-column: 1 / -1;
 }
 .facebook-followers {
+  border-top: 5px solid hsl(208, 92%, 53%);
   grid-row: 1;
   grid-column: 1;
 }
