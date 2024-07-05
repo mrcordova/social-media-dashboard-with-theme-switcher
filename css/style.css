@@ -46,6 +46,34 @@ label {
 }
 
 .slider {
+  position: relative;
+  display: inline-block;
+  width: 3.75rem;
+  height: 2.125rem;
+  background-color: gray;
+  border-radius: 2rem;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 1.625rem;
+  width: 1.625rem;
+  left: 0.25rem;
+  top: 0.25rem;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+#toggle:checked + .slider {
+  background-color: blue;
+}
+
+#toggle:checked + .slider::before {
+  transform: translateX(1.625rem);
+}
+/* .slider {
   --width: 5rem;
   --height: calc(var(--width) / 3);
   display: inline-block;
@@ -72,7 +100,7 @@ label {
 }
 #toggle:checked + .slider::before {
   transform: translateX(calc(var(--width) - var(--height) - 1px));
-}
+} */
 .overview {
   grid-row: 3;
   grid-column: 1 / -1;
