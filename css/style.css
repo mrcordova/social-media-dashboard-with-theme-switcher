@@ -147,10 +147,10 @@ label {
   align-items: center;
   background-color: var(--Light-Grayish-Blue-Card-BG);
   padding-inline: 4rem;
-  padding-block: 1.8rem 1.5rem;
+  padding-block: 1.7rem 1.5rem;
   border-radius: 0.4rem;
   /* margin-inline: 0.5rem; */
-  gap: 1.25rem;
+  gap: 1.27rem;
 }
 .total-card > div:first-child {
   display: flex;
@@ -171,23 +171,26 @@ label {
   color: var(--Very-Dark-Blue-Text);
   font-size: 3.5rem;
   letter-spacing: -0.12rem;
-  line-height: 1.08;
+  line-height: 1.12;
 }
 .followers-number > p {
   color: var(--Dark-Grayish-Blue-Text);
   font-size: 0.8rem;
   letter-spacing: 0.29rem;
-  text-align: center;
+  /* text-align: center; */
 }
 .total-card > div:last-child {
   display: flex;
   align-items: center;
   gap: 0.2rem;
 }
-
+.followers-percentage {
+  /* padding-block-start: 0.2rem; */
+}
 .followers-percentage > p {
   color: var(--Lime-Green);
   font-size: 0.8rem;
+  /* text-align: end; */
 }
 .cards {
   grid-row: 1;
