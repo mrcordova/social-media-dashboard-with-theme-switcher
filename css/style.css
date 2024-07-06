@@ -62,7 +62,9 @@ main {
 /* .social-dashboard-container > :is(h1) {
   padding-block: 2em;
 } */
-
+.social-dashboard-container {
+  z-index: 32;
+}
 .social-dashboard-container > h1 {
   font-size: 1.75rem;
   /* line-height: 1.5; */
@@ -73,6 +75,7 @@ main {
   color: var(--Dark-Grayish-Blue-Text);
 }
 .title-container {
+  /* z-index: 1; */
   display: flex;
   grid-row: 1;
   grid-column: 1 / -1;
@@ -86,12 +89,9 @@ main {
   padding-inline: 10.2rem 10.3rem;
   /* margin-inline: 1rem; */
 }
-/* .theme-container {
-  background-color: var(--Very-Pale-Blue-bg-pattern);
-  grid-row: 1;
-  grid-column: 4 / -1;
-  height: max-content;
-} */
+.theme-container {
+  z-index: 31;
+}
 /* Toggle Switch start */
 label {
   display: flex;
