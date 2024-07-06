@@ -194,7 +194,7 @@ label {
   grid-template-columns: repeat(4, minmax(min-content, max-content));
   grid-auto-rows: max-content;
   justify-content: center;
-  padding-block-start: 8rem;
+  padding-block-start: 8.5rem;
   gap: 1.8rem;
 }
 .overview {
