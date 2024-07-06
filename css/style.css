@@ -133,6 +133,7 @@ label {
   align-items: center;
   background-color: var(--Light-Grayish-Blue-Card-BG);
   padding-inline: 4rem;
+  padding-block: 1.8rem 1.5rem;
   border-radius: 0.4rem;
   gap: 1.25rem;
 }
@@ -178,7 +179,7 @@ label {
   display: grid;
   grid-template-columns: repeat(4, minmax(min-content, max-content));
   grid-auto-rows: max-content;
-  padding-block-start: 8rem;
+  padding-block-start: 6rem;
   gap: 1rem;
 }
 .overview {
