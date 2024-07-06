@@ -249,13 +249,15 @@ label {
   background-color: var(--Light-Grayish-Blue-Card-BG);
   display: flex;
   justify-content: space-between;
-  /* padding-inline: 1.5rem 1.3rem;
-  padding-block: 2rem 2.5rem; */
+  border-radius: 0.2rem;
+  padding-inline: 1.5rem 2rem;
+  padding-block-start: 1.5rem;
+  padding-block-end: 0.8rem;
 }
 .today-views {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.1rem;
 }
 .today-views > h3 {
   color: var(--Very-Dark-Blue-Text);
@@ -269,7 +271,7 @@ label {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 2.4rem;
+  gap: 2.5rem;
 }
 .overview-percentage > div {
   display: flex;
