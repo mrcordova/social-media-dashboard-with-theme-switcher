@@ -149,6 +149,7 @@ label {
   padding-inline: 4rem;
   padding-block: 1.8rem 1.5rem;
   border-radius: 0.4rem;
+  /* margin-inline: 0.5rem; */
   gap: 1.25rem;
 }
 .total-card > div:first-child {
@@ -174,8 +175,9 @@ label {
 }
 .followers-number > p {
   color: var(--Dark-Grayish-Blue-Text);
-  font-size: 0.9rem;
-  letter-spacing: 0.21rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.29rem;
+  text-align: center;
 }
 .total-card > div:last-child {
   display: flex;
@@ -208,12 +210,12 @@ label {
 }
 .twitter-followers {
   border-top: 5px solid hsl(203, 89%, 53%);
-  padding-inline: 3.85rem;
+  padding-inline: 3.8rem;
   grid-row: 1;
   grid-column: 2;
 }
 .instagram-followers {
-  padding-inline: 4.4rem;
+  padding-inline: 4.3rem;
   background: linear-gradient(
       var(--Light-Grayish-Blue-Card-BG),
       var(--Light-Grayish-Blue-Card-BG)
@@ -228,7 +230,7 @@ label {
   grid-column: 3;
 }
 .youtube-subs {
-  padding-inline: 3.7rem;
+  padding-inline: 3.65rem;
   border-top: 5px solid hsl(348, 97%, 39%);
   grid-row: 1;
   grid-column: 4;
