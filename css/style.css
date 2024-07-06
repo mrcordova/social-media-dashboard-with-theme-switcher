@@ -280,6 +280,9 @@ label {
   color: var(--Lime-Green);
   font-size: 0.78rem;
 }
+.negative-percentage {
+  color: var(--bright-red);
+}
 .facebook-pageviews {
   grid-row: 4;
 }
