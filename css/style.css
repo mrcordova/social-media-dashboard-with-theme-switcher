@@ -84,11 +84,12 @@ main {
 .social-dashboard-container > h1 {
   color: var(--heading-text);
 
-  font-size: clamp(1.5rem, 1.838rem + -0.3756vw, 1.75rem);
+  /* font-size: clamp(1.5rem, 1.838rem + -0.3756vw, 1.75rem); */
+  font-size: clamp(1.5rem, 1.412rem + 0.3756vw, 1.75rem);
   /* Mobile */
-  /* font-size: 1.75rem; */
-  /* Desktop */
   /* font-size: 1.5rem; */
+  /* Desktop */
+  /* font-size: 1.75rem; */
 }
 .social-dashboard-container > p {
   font-size: 0.89rem;
@@ -256,7 +257,7 @@ label {
   padding-block-start: clamp(8.5rem, 13.2324rem + -5.2582vw, 12rem);
   gap: clamp(1.5rem, 1.3944rem + 0.4507vw, 1.8rem);
   /* Mobile */
-  /* padding-block-start: 12rem; */
+  /* padding-block-start: 15rem; */
   /* gap: 1.5rem; */
   /* Desktop */
   /* padding-block-start: 8.5rem; */
@@ -265,7 +266,7 @@ label {
 .overview {
   color: var(--subheading-text);
   width: 100%;
-  min-width: 100%;
+  /* min-width: 100%; */
   grid-column: 1 / -1;
   /* grid-row: 2;
   grid-column: 1 / -1; */
