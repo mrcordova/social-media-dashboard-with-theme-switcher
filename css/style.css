@@ -115,14 +115,21 @@ main {
   z-index: 31;
   /* Mobile */
   padding-block-start: 1rem;
+  width: 100%;
 }
 /* Toggle Switch start */
 label {
   display: flex;
   cursor: pointer;
   color: var(--subheading-text);
+  /* Mobile */
   font-size: 0.9rem;
-  gap: 0.7rem;
+  gap: 12.6rem;
+  /* justify-content: space-between; */
+  /* Desktop */
+
+  /* font-size: 0.9rem; */
+  /* gap: 0.7rem; */
 }
 
 #toggle {
