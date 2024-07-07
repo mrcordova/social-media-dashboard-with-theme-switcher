@@ -42,6 +42,7 @@
   --subheading-text: hsl(228, 34%, 66%);
   --heading-text: hsl(0, 0%, 100%);
 
+  --card-bg-hover: hsl(228, 26%, 27%);
   --toggle-theme: linear-gradient(
     to right,
     hsl(210, 78%, 56%) 0%,
