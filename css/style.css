@@ -148,8 +148,8 @@ label {
   background-color: var(--Light-Grayish-Blue-Card-BG);
   padding-inline: 4rem;
   padding-block: 1.7rem 1.5rem;
-  border-radius: 0.4rem;
-  /* margin-inline: 0.5rem; */
+  border-radius: 0.3rem;
+
   gap: 1.27rem;
 }
 .total-card > div:first-child {
@@ -202,16 +202,16 @@ label {
 }
 .overview {
   color: var(--Dark-Grayish-Blue-Text);
-  grid-row: 3;
+  grid-row: 2;
   grid-column: 1 / -1;
 }
 .facebook-followers {
-  border-top: 5px solid hsl(208, 92%, 53%);
+  border-top: 4px solid hsl(208, 92%, 53%);
   grid-row: 1;
   grid-column: 1;
 }
 .twitter-followers {
-  border-top: 5px solid hsl(203, 89%, 53%);
+  border-top: 4px solid hsl(203, 89%, 53%);
   padding-inline: 3.8rem 3.7rem;
   grid-row: 1;
   grid-column: 2;
@@ -231,13 +231,13 @@ label {
   background-origin: padding-box, border-box;
   background-repeat: no-repeat; /* this is important */
 
-  border-top: 5px solid transparent;
+  border-top: 4px solid transparent;
   grid-row: 1;
   grid-column: 3;
 }
 .youtube-subs {
   padding-inline: 3.65rem;
-  border-top: 5px solid hsl(348, 97%, 39%);
+  border-top: 4px solid hsl(348, 97%, 39%);
   grid-row: 1;
   grid-column: 4;
 }
@@ -284,26 +284,27 @@ label {
   color: var(--bright-red);
 }
 .facebook-pageviews {
-  grid-row: 4;
+  /* margin-block-end: 2rem; */
+  grid-row: 3;
 }
 .facebook-likes {
-  grid-row: 4;
+  grid-row: 3;
 }
 .instagram-likes {
-  grid-row: 4;
+  grid-row: 3;
 }
 .instagram-pageviews {
-  grid-row: 4;
+  grid-row: 3;
 }
 .twitter-retweets {
-  grid-row: 5;
+  grid-row: 4;
 }
 .twitter-likes {
-  grid-row: 5;
+  grid-row: 4;
 }
 .youtube-likes {
-  grid-row: 5;
+  grid-row: 4;
 }
 .youtube-views {
-  grid-row: 5;
+  grid-row: 4;
 }
