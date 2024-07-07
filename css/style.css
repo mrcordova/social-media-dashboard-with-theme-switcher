@@ -29,6 +29,7 @@
     hsl(146, 68%, 55%) 100%
   );
 
+  --card-bg-hover: hsl(232, 33%, 91%);
   --Lime-Green: hsl(163, 72%, 41%);
   --bright-red: hsl(356, 69%, 56%);
 }
@@ -68,23 +69,8 @@ main {
   height: 100svh;
   /* width: 100%; */
   display: grid;
-
-  /* align-content: center; */
-
-  /* grid-template-columns: repeat(4, minmax(min-content, max-content));
-  grid-auto-rows: max-content; */
 }
 
-/* .social-dashboard-container {
-  grid-row: 1;
-  grid-column: 1 / 4;
-  background-color: var(--Very-Pale-Blue-bg-pattern);
-  padding-block: 3rem;
-  height: max-content;
-} */
-/* .social-dashboard-container > :is(h1) {
-  padding-block: 2em;
-} */
 .social-dashboard-container {
   z-index: 32;
 }
@@ -154,9 +140,6 @@ label {
   border-radius: 50%;
 }
 
-/* #toggle:checked + .slider {
-  background: var(--dark-theme-toggle);
-} */
 #toggle + .slider:hover {
   background: var(--dark-theme-toggle);
 }
@@ -176,6 +159,11 @@ label {
   border-radius: 0.3rem;
 
   gap: 1.27rem;
+}
+
+.total-card:hover {
+  cursor: pointer;
+  background-color: var(--card-bg-hover);
 }
 .total-card > div:first-child {
   display: flex;
@@ -257,6 +245,14 @@ label {
   grid-row: 1;
   grid-column: 3;
 }
+
+.instagram-followers:hover {
+  background: linear-gradient(var(--card-bg-hover), var(--card-bg-hover)),
+    linear-gradient(to right, hsl(37, 97%, 70%) 0%, hsl(329, 70%, 58%) 100%);
+  background-origin: padding-box, border-box;
+  background-repeat: no-repeat; /* this is important */
+  border-top: 4px solid transparent;
+}
 .youtube-subs {
   padding-inline: 3.65rem;
   border-top: 4px solid hsl(348, 97%, 39%);
@@ -275,6 +271,11 @@ label {
   padding-inline: 1.5rem 2rem;
   padding-block-start: 1.5rem;
   padding-block-end: 0.8rem;
+}
+
+.today-card:hover {
+  cursor: pointer;
+  background-color: var(--card-bg-hover);
 }
 .today-views {
   display: flex;
