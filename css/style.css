@@ -104,7 +104,7 @@ main {
 
   transition: 0.5s ease;
   /* Mobile */
-  padding-block: 2rem 9.5rem;
+  padding-block: 2rem 5.1rem;
   padding-inline: 1rem 1rem;
 
   /* Desktop */
@@ -171,11 +171,18 @@ label {
   flex-direction: column;
   align-items: center;
   background-color: var(--card-bg);
-  padding-inline: 4rem;
+
+  /* Mobile */
+  padding-inline: 6.15rem;
   padding-block: 1.7rem 1.5rem;
   border-radius: 0.3rem;
 
   gap: 1.27rem;
+  /* Desktop */
+  /* padding-inline: 4rem; */
+  /* padding-block: 1.7rem 1.5rem; */
+  /* border-radius: 0.3rem; */
+  /* gap: 1.27rem; */
 }
 
 .total-card:hover {
@@ -225,8 +232,13 @@ label {
   /* grid-template-columns: repeat(4, minmax(min-content, max-content)); */
   grid-auto-rows: max-content;
   justify-content: center;
-  padding-block-start: 8.5rem;
-  gap: 1.8rem;
+
+  /* Mobile */
+  padding-block-start: 12rem;
+  gap: 1.5rem;
+  /* Desktop */
+  /* padding-block-start: 8.5rem; */
+  /* gap: 1.8rem; */
 }
 .overview {
   color: var(--subheading-text);
