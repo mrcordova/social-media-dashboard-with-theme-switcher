@@ -72,6 +72,7 @@ main {
   /* place-content: center; */
   /* justify-content: center; */
   display: grid;
+  margin-block-end: 2rem;
 }
 
 .social-dashboard-container {
@@ -187,6 +188,7 @@ label {
   transition: 0.5s ease;
 
   padding-inline: clamp(4rem, 6.907rem + -3.23vw, 6.15rem);
+
   border-radius: 0.3rem;
   padding-block: 1.7rem 1.5rem;
 
