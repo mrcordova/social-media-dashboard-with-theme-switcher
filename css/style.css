@@ -62,7 +62,6 @@ body {
   display: grid;
 
   background-color: var(--bg);
-  /* place-content: center; */
 }
 
 main {
@@ -81,10 +80,12 @@ main {
 }
 .social-dashboard-container > h1 {
   color: var(--heading-text);
+
+  font-size: clamp(1.5rem, 1.838rem + -0.3756vw, 1.75rem);
   /* Mobile */
   /* font-size: 1.75rem; */
   /* Desktop */
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 .social-dashboard-container > p {
   font-size: 0.89rem;
@@ -102,10 +103,12 @@ main {
   justify-content: space-between;
   align-items: flex-start;
 
-  transition: 0.5s ease;
+  padding-block: 2rem clamp(5.1rem, 3.5507rem + 6.6103vw, 9.5rem);
+  padding-inline: clamp(1rem, -2.2394rem + 13.8216vw, 10.2rem)
+    clamp(1rem, -2.2746rem + 13.9718vw, 10.3rem);
   /* Mobile */
-  padding-block: 2rem 5.1rem;
-  padding-inline: 1rem 1rem;
+  /* padding-block: 2rem 5.1rem; */
+  /* padding-inline: 1rem 1rem; */
 
   /* Desktop */
   /* padding-block: 2rem 9.5rem; */
@@ -119,13 +122,16 @@ main {
 }
 /* Toggle Switch start */
 label {
+  transition: 0.5s ease;
   display: flex;
   cursor: pointer;
   color: var(--subheading-text);
-  /* Mobile */
+  gap: clamp(0.7rem, 16.7901rem + -17.8779vw, 12.6rem);
   font-size: 0.9rem;
-  gap: 12.6rem;
-  /* justify-content: space-between; */
+  /* Mobile */
+  /* font-size: 0.9rem; */
+  /* gap: 12.6rem; */
+  justify-content: space-between;
   /* Desktop */
 
   /* font-size: 0.9rem; */
@@ -171,7 +177,7 @@ label {
   flex-direction: column;
   align-items: center;
   background-color: var(--card-bg);
-
+  transition: 0.5s ease;
   /* Mobile */
   padding-inline: 6.15rem;
   padding-block: 1.7rem 1.5rem;
@@ -229,8 +235,10 @@ label {
   grid-row: 1;
   grid-column: 1 / -1;
   display: grid;
-  /* grid-template-columns: repeat(4, minmax(min-content, max-content)); */
-  grid-auto-rows: max-content;
+  grid-template-columns: repeat(auto-fit, minmax(216px, max-content));
+  /* grid-template-columns: repeat(auto-fit, minmax(min-content, max-content)); */
+  /* grid-auto-columns: auto; */
+  grid-auto-rows: auto;
   justify-content: center;
 
   /* Mobile */
@@ -334,9 +342,15 @@ label {
   color: var(--bright-red);
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 72.5625rem) {
   .social-dashboard-container {
+    width: max-content;
     border-bottom: 0;
+  }
+
+  .theme-container {
+    padding-block-start: 0rem;
+    width: max-content;
   }
   .title-container {
     flex-direction: row;
