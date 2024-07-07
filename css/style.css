@@ -74,6 +74,10 @@ main {
 
 .social-dashboard-container {
   z-index: 32;
+  border-bottom: 1px solid var(--heading-text);
+  /* Mobile */
+  width: 100%;
+  padding-block-end: 1.5rem;
 }
 .social-dashboard-container > h1 {
   color: var(--heading-text);
@@ -102,12 +106,15 @@ main {
   /* Mobile */
   padding-block: 2rem 9.5rem;
   padding-inline: 1rem 1rem;
+
   /* Desktop */
   /* padding-block: 2rem 9.5rem; */
   /* padding-inline: 10.2rem 10.3rem; */
 }
 .theme-container {
   z-index: 31;
+  /* Mobile */
+  padding-block-start: 1rem;
 }
 /* Toggle Switch start */
 label {
@@ -309,6 +316,9 @@ label {
 }
 
 @media (min-width: 50rem) {
+  .social-dashboard-container {
+    border-bottom: 0;
+  }
   .title-container {
     flex-direction: row;
     align-items: center;
