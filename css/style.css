@@ -66,7 +66,7 @@ body {
 
 main {
   height: 100%;
-  height: 100svh;
+  /* height: 100svh; */
 
   display: grid;
   margin-block-end: 2rem;
@@ -218,7 +218,7 @@ label {
 
   grid-auto-rows: auto;
   justify-content: center;
-
+  height: max-content;
   padding-block-start: clamp(8.5rem, 13.2324rem + -5.2582vw, 12rem);
   gap: clamp(1.5rem, 1.3944rem + 0.4507vw, 1.8rem);
 }
