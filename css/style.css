@@ -326,6 +326,7 @@ label {
   .social-dashboard-container {
     width: max-content;
     border-bottom: 0;
+    padding-block-end: 0;
   }
 
   .theme-container {
