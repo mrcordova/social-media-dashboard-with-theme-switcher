@@ -1,5 +1,11 @@
 const toggleSwitch = document.querySelector("label[for=toggle]");
-// console.log(toggleSwitch);
+
+window.addEventListener("load", () => {
+  document.documentElement.classList.toggle(
+    "dark-mode",
+    toggleSwitch.children[0].checked
+  );
+});
 
 toggleSwitch.addEventListener(
   "click",
