@@ -41,8 +41,8 @@
   --top-bg-pattern: hsl(232, 19%, 15%);
   --card-bg: hsl(228, 28%, 20%);
 
-  --subheading-text: hsl(228, 34%, 66%);
   --heading-text: hsl(0, 0%, 100%);
+  --subheading-text: var(--heading-text);
 
   --toggle-button-bg: var(--bg);
   --card-bg-hover: hsl(228, 26%, 27%);
