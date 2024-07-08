@@ -23,6 +23,8 @@
 
   --toggle-theme: hsl(232, 22%, 74%);
 
+  --toggle-button-bg: hsl(240, 24%, 96%);
+
   --dark-theme-toggle: linear-gradient(
     to right,
     hsl(210, 78%, 56%) 0%,
@@ -42,6 +44,7 @@
   --subheading-text: hsl(228, 34%, 66%);
   --heading-text: hsl(0, 0%, 100%);
 
+  --toggle-button-bg: var(--bg);
   --card-bg-hover: hsl(228, 26%, 27%);
   --toggle-theme: linear-gradient(
     to right,
@@ -140,7 +143,7 @@ label {
   width: 1.1rem;
   left: 1.7rem;
   top: 0.2rem;
-  background-color: hsl(240, 24%, 96%);
+  background-color: var(--toggle-button-bg);
   transition: 0.4s;
   border-radius: 50%;
 }
